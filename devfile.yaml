@@ -1,0 +1,12 @@
+schemaVersion: 2.2.0
+metadata:
+  name: empty-9a5d
+  namespace: sonti-ka-dev
+components:
+  - container:
+      image: quay.io/devfile/universal-developer-image:ubi8-d071837
+      sourceMapping: /projects
+      env:
+        - name: CONFIGURATION
+          value: Debug
+    name: universal-developer-image
