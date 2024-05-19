@@ -5,8 +5,9 @@ metadata:
 components:
   - container:
       image: quay.io/devfile/universal-developer-image:ubi8-d071837
-      sourceMapping: /projects
       env:
         - name: CONFIGURATION
           value: Debug
-    name: universal-developer-image
+        - name: HTTP_PROXY
+          value: https://127.0.0.1:8080
+    name: developer
