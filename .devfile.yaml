@@ -1,6 +1,6 @@
 schemaVersion: 2.2.0
 metadata:
-  name: empty-9a5d
+  name: demo
   namespace: sonti-ka-dev
 components:
   - container:
