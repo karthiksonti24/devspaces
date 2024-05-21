@@ -11,3 +11,10 @@ components:
         - name: HTTP_PROXY
           value: https://127.0.0.1:8080
     name: developer
+commands:
+   - id: create a dir
+      exec:
+        label: "create a dir"
+        workingDir: ${PROJECTS_ROOT}
+        commandLine: |
+            mkdir output;
