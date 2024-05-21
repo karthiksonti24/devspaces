@@ -15,7 +15,7 @@ commands:
    - id: create-dir
      exec:
         label: "create a dir"
-        component: builder
+        component: developer
         workingDir: ${PROJECTS_ROOT}/devspaces
         commandLine: "mkdir test"
 events:
