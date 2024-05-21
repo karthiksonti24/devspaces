@@ -16,6 +16,4 @@ commands:
      exec:
         label: "create a dir"
         component: builder
-        workingDir: ${PROJECTS_ROOT}
-        commandLine: |
-            mkdir output;
+        commandLine: mkdir test
