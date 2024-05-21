@@ -1,4 +1,4 @@
-schemaVersion: 2.2.0
+schemaVersion: 2.2.2
 metadata:
   name: demo
   namespace: sonti-ka-dev
@@ -16,4 +16,5 @@ commands:
      exec:
         label: "create a dir"
         component: builder
+        workingDir: ${PROJECTS_ROOT}/devspaces
         commandLine: mkdir test
