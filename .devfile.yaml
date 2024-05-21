@@ -13,7 +13,7 @@ components:
     name: developer
 commands:
    - id: create a dir
-      exec:
+     exec:
         label: "create a dir"
         component: builder
         workingDir: ${PROJECTS_ROOT}
