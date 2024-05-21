@@ -12,7 +12,7 @@ components:
           value: https://127.0.0.1:8080
     name: developer
 commands:
-   - id: create a dir
+   - id: create-dir
      exec:
         label: "create a dir"
         component: builder
