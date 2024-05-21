@@ -18,3 +18,6 @@ commands:
         component: builder
         workingDir: ${PROJECTS_ROOT}/devspaces
         commandLine: "mkdir test"
+events:
+  postStart:
+    - "create-dir"
