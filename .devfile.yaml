@@ -5,16 +5,11 @@ metadata:
 components:
   - container:
       image: quay.io/devfile/universal-developer-image:ubi8-d071837
-      env:
-        - name: CONFIGURATION
-          value: Debug
-        - name: HTTP_PROXY
-          value: https://127.0.0.1:8080
     name: developer
 commands:
-   - id: create-dir
+   - id: setenv
      exec:
-        label: "create a dir"
+        label: "set env variables"
         component: developer
         workingDir: ${PROJECTS_ROOT}/devspaces
         commandLine: |
@@ -22,4 +17,4 @@ commands:
             export demo=test
 events:
   postStart:
-    - "create-dir"
+    - "setenv"
